@@ -1,0 +1,18 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Your study marks (saved by run.py). Remove this line to sync marks between computers with git.
+progress.json
+
+# Editors and OS
+.vscode/*
+!.vscode/launch.json
+!.vscode/tasks.json
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
