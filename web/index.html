@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Interview Prepper</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='3' y='6' width='26' height='20' rx='4' fill='%23c25d14'/%3E%3Crect x='8' y='12' width='16' height='3' rx='1.5' fill='white'/%3E%3Crect x='8' y='18' width='10' height='3' rx='1.5' fill='white'/%3E%3C/svg%3E">
+<!-- Fonts load when online; offline the page falls back to system fonts. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="bar-in">
+    <div class="brand"><span id="brand">Interview Prepper</span> <small id="countdown"></small></div>
+    <nav class="tabs" role="tablist" aria-label="Views">
+      <button class="tab" role="tab" id="tab-study" aria-selected="true" data-view="study">Study</button>
+      <button class="tab" role="tab" id="tab-list" aria-selected="false" data-view="list">All cards</button>
+      <button class="tab" role="tab" id="tab-sheets" aria-selected="false" data-view="sheets">Sheets</button>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="view" id="view-study">
+    <div class="filters">
+      <div class="frow" id="deck-row"><span class="flabel">Deck</span></div>
+      <div class="frow" id="sec-row"><span class="flabel">Sections</span></div>
+      <div class="frow"><span class="flabel">Order</span>
+        <button class="chip" id="order-btn" aria-pressed="false">Shuffle</button>
+        <span class="spacer"></span>
+        <button class="chip" id="reset-btn" aria-pressed="false">Clear my marks</button>
+      </div>
+    </div>
+    <div class="meter" id="meter"></div>
+    <div id="stage"></div>
+    <p class="keys"><kbd>H</kbd> hint · <kbd>Space</kbd> reveal · <kbd>1</kbd> struggling · <kbd>2</kbd> got it · <kbd>←</kbd> <kbd>→</kbd> move · click a figure to enlarge</p>
+    <p class="saved" id="saved"></p>
+  </section>
+
+  <section class="view list" id="view-list" hidden>
+    <div class="toolbar"><p id="list-summary"></p></div>
+    <div id="list-body"></div>
+  </section>
+
+  <section class="view" id="view-sheets" hidden>
+    <div class="sheet-tabs" id="sheet-tabs"></div>
+    <article class="sheet" id="sheet-body"></article>
+  </section>
+</main>
+
+<div class="lb" id="lb" hidden><button class="close" id="lb-close">Close</button><img id="lb-img" alt="Enlarged figure"></div>
+
+<script src="data/cards.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
