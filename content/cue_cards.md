@@ -1,6 +1,6 @@
 # Hatch interview cue cards
 
-Interview: **Thursday Nov 19, 11 am to 12 pm**. Vision & AI Applications Engineering Trainee, Advanced Automation and Robotics.
+Interview: **Monday Nov 23, 9 am**. Vision & AI Applications Engineering Trainee, Advanced Automation and Robotics.
 
 <!--
 How this file is read by scripts/build_data.py (edit the cards here, then rebuild):
@@ -10,11 +10,14 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
   - **(4)** is the number of points to hit. The build checks that the card has exactly that many points.
   - ★ at the end marks a must-know card (optional).
 - The next line is the tag in backticks:  `[Hatch interview]`
+  Optionally followed by a recommended answer time for the stopwatch:  `[Hatch interview]` ⏱ 90s (75–120s)
+  (target 90 seconds, aim for 75 to 120). The range is optional:  ⏱ 60s
 - Then the back of the card. Each top-level "- " or "1. " line is one point.
   Bold words become the hints. Lines in *italics* or plain paragraphs are extras and are not counted.
 - Figures: ![](figs/name.png), with the image saved in web/figs/.
 - Cards are separated by a line with three dashes.
 - Every "# Sheet N · Title" heading after the cards starts a project sheet, shown in the Sheets tab.
+- You can also edit a card in the app (Edit button, or E) when it runs with python run.py; that rewrites the card here.
 -->
 
 ---
@@ -24,7 +27,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H01 · Tell me about yourself **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 75s (60–90s)
 
 - **Who:** MEng **Computer Engineering**, McMaster, finishing **Dec 2026**; BEng **Engineering Physics**.
 - **Capstone:** a robot that finds **Tim Hortons cups** in **mixed recycling** on a **moving conveyor** and lifts them out with a **vacuum gantry**: **YOLOv3**, **95%** removed.
@@ -36,7 +39,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H02 · Why Hatch? Why this role? **(3)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 60s (45–75s)
 
 - **Honest hook:** I knew Hatch for **big mining, metals and energy projects**. This posting showed me **AAR**: **vision and AI on robots in real plants**, which I didn't know you did.
 - **Fit:** it's what I've already built: a **vision-guided robot** (capstone) and **imaging in bad light** (research). Mining is **dust, heat, glare and low light**.
@@ -47,7 +50,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H03 · What do you know about Hatch? **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 60s (45–90s)
 
 - **70+ years**, **10,000 colleagues**, **150 countries**; sectors **Metals, Energy, Infrastructure**. Aim: "**a better world through positive change**"; motto: "**entrepreneurs with a technical soul**".
 - **AAR** sits in the **Technologies** team under **Business Practices: Equipment Technology**, Mississauga, supporting offices worldwide.
@@ -57,7 +60,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H04 · Where do you see yourself in 5 years? **(2)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 45s (30–60s)
 
 - A **senior AI / computer vision engineer** who **leads a team** and works at the **leading edge of vision**, making these machines **smarter and safer**.
 - Having taken systems from **proof-of-concept to commissioning** on client sites, with my **P.Eng**, and **mentoring** new trainees.
@@ -67,7 +70,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H05 · What is your greatest weakness? **(2)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 60s (45–90s)
 
 - **Weakness:** I'm drawn to the **exciting part first** (e.g. designing the **multi-agent system** at Hitachi) before the **unglamorous groundwork**: **baselines, A/B tests, regression tests**.
 - **What I do now:** **fundamentals first**. At Hitachi I built a **40-defect benchmark** before tuning the agents, which is how we could show **37% → 82%**. In research I **reproduce the baseline and write pass/fail rules before any experiment**.
@@ -75,7 +78,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H06 · STAR: Learned something new quickly **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** capstone, fall 2022. None of us had built a **vision system**. **ChatGPT launched that semester** and hooked us on AI, but there was **no AI to lean on** for code yet.
 - **T:** go from zero to a detector that **drives a robot** on a moving belt by **April**.
@@ -87,7 +90,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H07 · STAR: Working on a cross-disciplinary team **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** Hitachi Rail AI project: me (**computer engineering**), a **computer science** intern and an **electrical** intern. Different strengths, **uneven software fundamentals**.
 - **T:** get all three of us building **one system, the same way**.
@@ -99,7 +102,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H08 · STAR: Leading others **(4)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** I led a **3-intern team** building the AI document reviewer at Hitachi Rail.
 - **T:** set direction and deliver something **measurable**.
@@ -109,7 +112,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H09 · STAR: A failure or a result that didn't go your way **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** **L3Harris**, laser alignment on the **MX-25** camera. My Python tool told operators **how far to turn each mirror knob**.
 - **T:** make it work **on the real bench**, not just in my calculations.
@@ -121,7 +124,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H10 · STAR: Attention to detail **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** research code is written to **publish, not to maintain**: **hard-coded values**, little structure, and it **doesn't always match the paper**.
 - **T:** know **exactly what the code does** before building on it.
@@ -133,7 +136,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H11 · STAR: Solving a problem systematically, adapting when plans change **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** the plan was to build a **monotone curve** first (Rung 1).
 - **T:** first **measure** what the original curves actually learn.
@@ -143,7 +146,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H12 · STAR: Organisation under a deadline **(4)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** Hitachi Rail: build a **scheduler** that updates **Excel** reports from several **platform databases**, needed **by month end**.
 - **T:** deliver a working tool **fast** without missing anything critical.
@@ -155,7 +158,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H13 · STAR: Explaining technical work to non-experts **(4)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** L3Harris: operators, not engineers, aligned the MX-25 laser by **trial and error**.
 - **T:** a tool they would **trust and use**.
@@ -165,7 +168,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H14 · STAR: A disagreement **(4)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** capstone kickoff, **3 people**: one wanted the **mechanical** side, and **two of us wanted software**.
 - **T:** split the work so **every part had an owner** and nobody felt sidelined.
@@ -175,7 +178,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H15 · STAR: Safety **(4)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 90s (75–120s)
 
 - **S:** capstone: a **moving belt**, a **gantry** and **hot motor drivers** running for long test sessions next to people.
 - **T:** make it **safe to run and easy to stop**.
@@ -185,7 +188,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H16 · "You haven't used PLCs or 3D sensors." How do you answer? **(3)**
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 45s (30–60s)
 
 - **Admit it:** I haven't programmed a PLC or used a structured-light or laser scanner.
 - **Nearest thing:** **ESP32 motor control** in C++ (steppers, a solenoid valve, a serial handshake with a PC); 3D reconstruction from **multi-view photos with camera poses**; a **3D image processing** course.
@@ -194,7 +197,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H17 · Design question: "How would you build a vision system for X?" **(8)** ★
-`[Hatch interview]` *(small font on the print; full version on Sheet 3)*
+`[Hatch interview]` ⏱ 120s (90–180s) *(small font on the print; full version on Sheet 3)*
 
 *Mnemonic:* **R**eally **S**mart **L**ights **D**on't **M**ake **I**ndustrial **V**ision **M**agic.
 
@@ -223,7 +226,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H19 · What is your greatest strength? **(3)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 60s (45–75s)
 
 - **Resourcefulness:** when I'm stuck I go **wide**: papers, **the code itself**, docs, forums, colleagues, **AI tools**. Then I **check it with an experiment**.
 - **Why it matters here:** AI and vision **move fast**. Knowing **what tools exist** and how to check them is half the job, and I **follow the field for fun**.
@@ -232,7 +235,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H20 · Tell me what you know about the AAR team **(4)** ★
-`[Hatch interview]`
+`[Hatch interview]` ⏱ 60s (45–90s)
 
 - **Where:** **Advanced Automation and Robotics**, in the **Technologies** team (Business Practices: **Equipment Technology**), **Mississauga**, supporting offices **globally**.
 - **What:** **vision and AI** for **mining, metals** and other complex operations; robots for "**harsh and unstructured environments**": hardened, **on-the-fly** motion, **force control**, **telerobotics** that move people **out of hazards**.
@@ -244,7 +247,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### H21 · Design example: vision on a mining conveyor **(6)** ★
-`[Hatch interview]` *(small font; full version on Sheet 3)*
+`[Hatch interview]` ⏱ 120s (90–180s) *(small font; full version on Sheet 3)*
 
 *Problem:* find **oversize rocks and tramp metal** on the belt feeding a **crusher**, then stop, divert or pick. It's my capstone at mine scale.
 
@@ -262,7 +265,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### E01 · L3Harris: the laser calibration tool (STAR) **(4)** ★
-`[Experience]`
+`[Experience]` ⏱ 90s (75–120s)
 
 - **S:** MX-25 camera: operators aligned a **laser** by turning **mirror knobs** by trial and error, about **5 minutes** each time.
 - **T:** tell them **how far to turn each knob** so the beam returns along its **incoming path**.
@@ -272,7 +275,7 @@ How this file is read by scripts/build_data.py (edit the cards here, then rebuil
 ---
 
 ### E02 · Hitachi Rail: AI document review (STAR) **(4)**
-`[Experience]`
+`[Experience]` ⏱ 90s (75–120s)
 
 - **S:** hundreds of **cross-referenced engineering documents**, checked for errors by hand.
 - **T:** lead a **3-person co-op team** building an AI reviewer.
