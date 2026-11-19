@@ -36,7 +36,8 @@
     </div>
     <div class="meter" id="meter"></div>
     <div id="stage"></div>
-    <p class="keys"><kbd>H</kbd> hint · <kbd>Space</kbd> reveal · <kbd>1</kbd> struggling · <kbd>2</kbd> got it · <kbd>←</kbd> <kbd>→</kbd> move · click a figure to enlarge</p>
+    <p class="keys"><kbd>H</kbd> hint · <kbd>Space</kbd> reveal · <kbd>1</kbd> struggling · <kbd>2</kbd> got it · <kbd>3</kbd> memorized · <kbd>←</kbd> <kbd>→</kbd> move<br>
+      <kbd>T</kbd> start/pause stopwatch · <kbd>R</kbd> reset it · <kbd>E</kbd> edit card · click a figure to enlarge</p>
     <p class="saved" id="saved"></p>
   </section>
 
@@ -51,9 +52,30 @@
   </section>
 </main>
 
+<aside class="timer" id="timer" aria-label="Answer stopwatch" data-phase="idle">
+  <div class="t-head"><span class="t-label">Stopwatch</span><span class="t-target" id="t-target"></span></div>
+  <div class="t-read" id="t-read" aria-live="off">0:00</div>
+  <div class="t-bar" aria-hidden="true"><span class="t-band" id="t-band"></span><i class="t-fill" id="t-fill"></i><b class="t-tick" id="t-tick"></b></div>
+  <div class="t-btns">
+    <button class="btn primary" id="t-go">Start <kbd>T</kbd></button>
+    <button class="btn" id="t-reset">Reset <kbd>R</kbd></button>
+  </div>
+  <details class="t-opts">
+    <summary>Settings</summary>
+    <label><input type="checkbox" id="t-autoreset"> Reset on a new card</label>
+    <label><input type="checkbox" id="t-chime"> Chime past the max</label>
+    <label>Target for untimed cards <input type="number" id="t-default" min="5" max="1800" step="5"> s</label>
+    <p>Green band: the recommended range. Tick: the target. Reveal pauses it, so you see your time.</p>
+  </details>
+</aside>
+
+<div class="toast" id="toast" role="status" hidden><span id="toast-msg"></span><button id="toast-undo" hidden>Undo</button></div>
+
 <div class="lb" id="lb" hidden><button class="close" id="lb-close">Close</button><img id="lb-img" alt="Enlarged figure"></div>
 
 <script src="data/cards.js"></script>
+<script src="js/timer.js"></script>
+<script src="js/editor.js"></script>
 <script src="js/app.js"></script>
 </body>
 </html>
