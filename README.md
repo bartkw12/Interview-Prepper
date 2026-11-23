@@ -132,5 +132,9 @@ tests/                   unit tests (python -m unittest)
 .vscode/                 run configs (F5) and tasks
 ```
 
+## To add
+
+Will add compatability with new interviews and projects, will have a default template any and all interviews can build into. No hardcoded Hatch.
+
 `web/data/cards.js` is a script (`window.PREP_DATA = ...`) rather than JSON so that the page also works when
 opened straight from disk, where browsers block loading JSON files.
